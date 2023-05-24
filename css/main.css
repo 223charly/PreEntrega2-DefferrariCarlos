@@ -1,0 +1,415 @@
+/* RESET */
+
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+}
+
+/* Estilo Header */
+
+.menu-propio{
+    font-size: larger;
+    background: linear-gradient(to left, #950707 10%, #ec0505);
+    padding: 5px;
+}
+
+/*LINKS - ESTILOS*/
+
+a:link {
+    color: whitesmoke
+}
+  
+a:visited {
+    color: whitesmoke
+}
+
+/* Contenedores de las clases */
+
+.h1-clase{
+    margin: 15px auto 5px auto;
+    color: #ec0505;
+    text-align: center;
+    text-shadow: 2px 2px 5px grey;
+}
+
+.card-img-top{
+    width: 50px;
+    margin: 0 auto 0 auto;
+}
+
+.card-margin{
+    margin: 25px;
+    background-color: whitesmoke;
+    text-align: center;
+    display: flex;
+    z-index: 0;
+}
+
+.h2-clase {
+    margin: 55px auto 35px auto;
+    color: #ec0505;
+    text-align: center;
+    text-shadow: 2px 2px 5px grey;
+}
+
+/* Contenedores de las zonas */
+
+.card-footer-mio{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* Footer */
+
+footer{
+    background-color: #ec0505;
+    margin-top: 25px;
+
+}
+
+footer a img{
+    height: 25px;
+}
+
+.btn-warning{
+    margin: 25px 5px 15px 15px;
+}
+
+.lista-icono{
+    list-style-image: url(../images/ubicacion.svg);
+
+}
+
+/* Boton flotante  WhatsApp */
+
+.btn-whatsapp {
+    display:block;
+    width:5px;
+    height:5px;
+    color:#fff;
+    position: fixed;
+    right: 100px;
+    bottom:100px;
+    border-radius:50%;
+    text-align:center;
+    z-index:15;
+  }
+
+  .iconows1{
+    width: 75px;
+    height: 75px;
+  }
+  
+  
+/* Pagina Cursos */
+
+.contenedor{
+    display: grid;
+    grid-template-areas: "foto ofrecer ofrecer"
+                         "curso curso curso"
+                         "clase1 clase2 clase3"
+                         "footer footer footer";                         
+
+}
+.caja {
+    border: 1px solid black;
+    background-color: #ec0505;
+}
+
+.c-uno{
+    grid-area: foto;
+    background-color: rgb(0, 0, 0);
+    margin-top: 20px;
+}
+
+.auto-uno{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+}
+.auto{
+    max-width: 90%;
+    border-radius: 20%;
+    box-shadow: 10px 10px 15px rgb(218, 17, 17);
+}
+
+.c-dos{
+    grid-area: ofrecer;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    color: whitesmoke;
+    margin-top: 20px;
+}
+
+.h1-curso {
+    color: #ec0505;
+    text-shadow: 2px 2px 5px grey;
+}
+
+.accordion-item{
+    margin: 0px 20px 0px 15px;
+}
+
+.h2-curso {
+    color: #ec0505;
+    text-shadow: 2px 2px 5px grey;
+}
+
+.p-curso{
+    margin: 15px 15px 15px 15px;
+}
+
+.c-tres {
+    grid-area: curso;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    color: whitesmoke;
+    margin-top: 30px;
+}
+
+.card-header{
+    text-align: center;
+    justify-content: center;
+    color: whitesmoke;
+    background-color: rgb(95, 94, 93);
+}
+
+.c-cuatro {
+    grid-area: clase1;
+    background-color: rgb(0, 0, 0);
+    margin: 10px;
+}
+
+.c-cinco {
+    grid-area: clase2;
+    background-color: rgb(0, 0, 0);
+    margin: 10px;
+}
+
+.c-seis {
+    grid-area: clase3;
+    background-color: rgb(0, 0, 0);
+    margin: 10px;
+}
+
+.c-siete {
+    grid-area: footer;
+    background-color: rgb(0, 0, 0);
+}
+
+/* Estilo celular */
+
+@media screen and (max-width: 575.98px) { 
+    
+    .contenedor{
+        display: grid;
+        grid-template-areas: "foto"
+                             "ofrecer"
+                             "curso"
+                             "curso"
+                             "curso"
+                             "clase1"
+                             "clase2"
+                             "clase3"
+                             "footer";                         
+    
+    }
+}
+
+/* 4 - Informacion */
+
+.boton{
+    height: 35px; 
+    width: 300px;  
+    padding-left: 5px;
+    padding-right: 5px;   
+    margin-bottom: 20px; 
+    margin-top: 10px;   
+    margin-left: 25px;
+    text-transform: uppercase;
+    background-color: #ff0a0a; 
+    border-color: #000000; 
+    border-style: solid; 
+    border-radius: 10px;  
+    cursor: pointer;
+  }
+  
+  .cursos{
+    color: whitesmoke;
+    background-color: #000000;
+  }
+  
+  .cursos1{
+    text-align: center;
+  }
+  
+  .cursos2{
+    text-align: left;
+    display: inline-block;
+    margin: 15px 0px 15px 50px;
+  }
+  
+  .cursoimagen{
+    float: right;
+    margin-top: 50px;
+    margin-right: 100px;
+    width: 35%;
+    border-radius: 15%;
+    border: solid 5px;
+    border-color: #000000;
+    box-shadow: 10px 10px 15px rgb(245, 4, 4);
+  }
+  
+  .cursos3{
+    text-align: left;
+    width: 50%;
+    margin: 5px 0px 0px 15px;
+    padding: 15px;
+  }
+  
+
+
+  
+  
+  ::-webkit-input-placeholder {
+   color: #a8a8a8;
+  }
+  
+  
+  ::-webkit-textarea-placeholder {
+   color: #a8a8a8;
+  }
+
+  
+/* 5 - Contacto */
+
+.contacto {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    margin-top: 50px;
+  }
+  
+  .iframemap {
+  margin: 25px;
+  padding: 25px;
+  border: none;
+  }
+  
+  .formulario {
+    margin-top: 50px;
+  }
+    
+  
+  .formulario input:focus{
+    outline:0;
+    border: 1px solid #97d848;
+  }
+  
+  .formulario textarea:focus{
+    outline:0;
+    border: 1px solid #97d848;
+  }
+  
+  .redes1{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+  }
+  
+  .redes {
+    margin: 25px;
+    width: 100%;
+  }
+
+  .nosotros {
+    color: whitesmoke;
+  }
+
+  .nosotros1 {
+    color: whitesmoke;
+  }
+
+/* */
+
+/* form1 */
+  
+.contact_form{  
+    width: 460px; 
+    height: auto;
+    margin: 80px auto;
+    border-radius: 10px;  
+    padding-top: 30px;
+    padding-bottom: 20px;  
+    background-color: #fbfbfb; 
+    padding-left: 30px; 
+  }
+  
+  
+  input{
+    background-color: #fbfbfb; 
+    width: 408px; 
+    height: 40px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: #000000; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+  }
+  
+  textarea{
+    background-color: #fbfbfb; 
+    width: 405px; 
+    height: 150px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: #000000;  
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+    padding-top: 15px; 
+  }
+  
+  
+  label{
+    display: block; 
+    float: center;  
+  }
+  
+ 
+  
+  
+  .aviso{
+    font-size: 13px;  
+    color: #0e0e0e;  
+  }
+  
+  .form1{
+    font-size: medium;
+    margin-bottom: 25px;
+    color: whitesmoke;
+  }
+  
+  h3{
+    font-size: 16px; 
+    padding-bottom: 30px;
+    color: #0e0e0e; 
+  }
+  
+  
+  .p formulario-contacto{
+    font-size: 14px; 
+    color: #0e0e0e; 
+  }
